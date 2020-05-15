@@ -1,0 +1,113 @@
+.MuiDialog-paperWidthSm {
+  min-width: 500px;
+  min-height: 200px;
+  max-height: fit-content;
+}
+
+@media (max-width: 840px) {
+  .sideDrawer {
+    left: -240px;
+  }
+  .sideDrawerOpen {
+    left: 0px;
+    z-index: 1000;
+    top: 0 !important;
+  }
+  .cross {
+    display: block !important;
+  }
+  .dashboard {
+    width: 100% !important;
+    padding-top: 0px;
+  }
+  .main {
+    position: relative !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .studentsHeaderButton {
+    display: block !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .studentsHeaderButton button {
+    max-width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard {
+    padding-bottom: 0;
+  }
+  .profileViewContainer {
+    display: block !important;
+  }
+  .profileViewContainer .leftRightCards {
+    width: 100%;
+  }
+
+  .dashboardHeader .normalText {
+    font-size: 14px;
+  }
+
+  .dashboardHeader .boldText {
+    font-size: 18px;
+  }
+  .dashboardHeader .btns {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  /* statistics card */
+  .statisticsContainer {
+    display: block !important;
+  }
+  .statisticsCard {
+    width: 48% !important;
+    display: inline-block;
+  }
+  /* generic card */
+  .genericCardWrapper {
+    display: block !important;
+  }
+  .genericCard {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 540px) {
+  /* statistics card */
+
+  .statisticsCard {
+    width: 100% !important;
+  }
+  /* getStarted card */
+  .displayBlock {
+    display: block !important;
+  }
+  .getStartedCard {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: inline-block;
+  }
+  .classCard {
+    width: 100% !important;
+  }
+  .fullBtn {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 400px) {
+  /* input card */
+  .MuiContainer-root {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .inputCard {
+    width: 320px !important;
+  }
+}
