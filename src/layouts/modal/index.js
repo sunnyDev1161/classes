@@ -19,7 +19,8 @@ export default function CustomModal(props) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle>{title}</DialogTitle>
+        <DialogTitle style={{ background: 'gainsboro' }}>{title}</DialogTitle>
+
         <DialogContent>{props.children}</DialogContent>
       </Dialog>
     </div>

@@ -32,7 +32,8 @@ const CustomInput = props => {
     className = '',
     containerClass = '',
     variant = '',
-    selectTitle = ''
+    selectTitle = '',
+    selectMenu = []
   } = props;
   const classes = useStyles();
   if (type === 'search') {
@@ -88,6 +89,7 @@ const CustomInput = props => {
                         }
                         autoComplete={'off'}
                         placeholder={input.placeHolder}
+                        style={!input.icon ? { paddingLeft: '10px' } : {}}
                       />
                       {input.icon && (
                         <i className={input.icon + ' ' + classes.icon} />
@@ -106,10 +108,15 @@ const CustomInput = props => {
                         value={input.value}
                         onChange={input.onChange}
                         className={classes.input}
+                        style={{ paddingLeft: '10px' }}
                       >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {selectMenu.map((menu, index) => {
+                          return (
+                            <MenuItem value={menu.value} key={menu.id}>
+                              {menu.text}
+                            </MenuItem>
+                          );
+                        })}
                       </Select>
                     </FormControl>
                   </>
