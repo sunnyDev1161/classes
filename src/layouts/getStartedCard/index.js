@@ -42,7 +42,7 @@ const GetStartedCard = props => {
         {variant === 'tutorials' ? (
           ''
         ) : (
-          <button className={classes.btn}>>></button>
+          <i className={`fas fa-angle-double-right ${classes.btn}`} />
         )}
       </div>
     </Card>

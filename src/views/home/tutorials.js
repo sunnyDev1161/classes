@@ -1,8 +1,6 @@
 import React from 'react';
 import GetStartedCard from 'src/layouts/getStartedCard';
 import { makeStyles } from '@material-ui/core';
-import { THEMES } from 'src/constants';
-import CustomAvatar from 'src/layouts/avatar';
 import { dashBoard } from 'src/theme';
 
 const useStyles = makeStyles(theme => ({
@@ -16,7 +14,17 @@ const useStyles = makeStyles(theme => ({
   bottomCard: {
     background: 'black',
     color: '#fff'
-  }
+  },
+  videoIcon: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%,-50%)',
+    color: '#f8b62a',
+    fontSize: '45px'
+  },
+  courseName: { fontSize: '12px' },
+  courseWrapper: { padding: '20px' }
 }));
 
 const Tutorials = props => {
@@ -29,18 +37,27 @@ const Tutorials = props => {
           des={'How to use the plateform'}
           variant={'tutorials'}
           bottom={classes.bottomCard}
-        ></GetStartedCard>
+        >
+          <i className={`far fa-play-circle ${classes.videoIcon}`}></i>
+        </GetStartedCard>
         <GetStartedCard
           des={'How to start a course'}
           variant={'tutorials'}
           bottom={classes.bottomCard}
-        ></GetStartedCard>
+        >
+          {' '}
+          <i className={`far fa-play-circle ${classes.videoIcon}`}></i>
+        </GetStartedCard>
         <GetStartedCard
           className={classes.lastCard}
           des={'Upload a file'}
           variant={'tutorials'}
           bottom={classes.bottomCard}
-        ></GetStartedCard>
+        >
+          <div className={classes.courseWrapper}>
+            <p className={classes.courseName}>Course Name</p>
+          </div>
+        </GetStartedCard>
       </div>
     </div>
   );

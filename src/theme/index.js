@@ -27,7 +27,6 @@ export const inputTheme = {
   },
   formBtn: {
     width: '100%',
-    width: '100%',
     maxWidth: '300px',
     borderRadius: '24px',
     outline: 'none',
@@ -89,7 +88,7 @@ export const genericCard = {
 export const getStartedCard = {
   card: {
     width: '33.33%',
-    height: '270px',
+    height: '210px',
     boxShadow: THEMES.BOX_SHADOW,
     position: 'relative',
     margin: '0 10px 0 0'

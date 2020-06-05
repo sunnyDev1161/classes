@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core';
 import GenericCard from 'src/layouts/genericCard';
 import office from 'src/assets/images/office.png';
 import DashboardHeader from 'src/layouts/dashboardHeader';
+import CustomPagination from 'src/layouts/pagination';
 const useStyles = makeStyles(theme => ({
   imageContainer: {
     ...NoDataCardTheme.imageContainer,
@@ -42,6 +43,7 @@ const ArchivesView = props => {
           </NoDataCard>
         )}
       </div>
+      <CustomPagination />
     </>
   );
 };

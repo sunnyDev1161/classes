@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   flexBox: { display: 'flex', justifyContent: 'space-between' },
   normalText: { ...dashBoard.normalText, margin: '20px 0' },
   lastCard: { maxWidth: '240px' },
-  avatar: { marginTop: '50px' }
+  avatar: { marginTop: '50px', width: '70px', height: '70px' }
 }));
 
 const GetStarted = props => {

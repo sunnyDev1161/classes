@@ -1,10 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
+import { THEMES } from 'src/constants';
 import { inputTheme } from 'src/theme';
 
 const useStyles = makeStyles(theme => ({
   btn: inputTheme.formBtn,
-  icon: { marginRight: '5px' }
+  icon: { marginRight: '5px' },
+  black: { color: 'white', background: 'black' },
+  yellow: { color: 'black', background: THEMES.YELLOW_BTN }
 }));
 const CustomButton = props => {
   const classes = useStyles();
@@ -14,11 +17,17 @@ const CustomButton = props => {
     type = '',
     title = '',
     icon = false,
-    onClick
+    onClick,
+    black = false,
+    yellow = false
   } = props;
   return (
     <button
-      className={classes.btn + ' ' + className}
+      className={
+        black
+          ? classes.btn + ' ' + className + ' ' + classes.black
+          : classes.btn + ' ' + className + ' ' + classes.yellow
+      }
       type={type}
       style={style}
       onClick={onClick}

@@ -39,6 +39,7 @@
     "@material-ui/styles": "^4.9.6",
     "@mdx-js/react": "^1.5.8",
     "@react-pdf/renderer": "^1.6.8",
+    "@syncfusion/ej2-react-schedule": "^18.1.54",
     "apexcharts": "^3.18.0",
     "axios": "^0.19.2",
     "axios-mock-adapter": "^1.17.0",

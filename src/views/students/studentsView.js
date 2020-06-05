@@ -10,6 +10,7 @@ import GenericCard from 'src/layouts/genericCard';
 import StudentsList from './studentsList';
 import { THEMES } from 'src/constants';
 import GenericFilesLayout from './files';
+import CustomPagination from 'src/layouts/pagination';
 
 const useStyles = makeStyles(theme => ({
   imageContainer: {
@@ -95,9 +96,12 @@ const StudentsView = props => {
             {' '}
             <div className={classes.flex + ' ' + 'displayBlock'}>
               {data.length > 0 ? (
-                data.map(val => {
-                  return <GenericCard key={val} className="genericCard" />;
-                })
+                <>
+                  {data.map(val => {
+                    return <GenericCard key={val} className="genericCard" />;
+                  })}
+                  <CustomPagination />
+                </>
               ) : (
                 <NoDataCard>
                   <div className={classes.imageContainer}></div>
@@ -111,9 +115,14 @@ const StudentsView = props => {
             {' '}
             <div className={classes.flex}>
               {archivesData.length > 0 ? (
-                archivesData.map(val => {
-                  return <GenericCard key={val} variant={'studentArchives'} />;
-                })
+                <>
+                  {archivesData.map(val => {
+                    return (
+                      <GenericCard key={val} variant={'studentArchives'} />
+                    );
+                  })}
+                  <CustomPagination />
+                </>
               ) : (
                 <NoDataCard>
                   <div className={classes.imageContainer}></div>

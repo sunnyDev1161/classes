@@ -119,3 +119,179 @@
     width: 320px !important;
   }
 }
+
+/* flex class */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paginationWrapper {
+  width: 100%;
+  margin: 20px 0;
+}
+.paginationBtns {
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  font-size: 14px;
+  padding: 10px;
+  background: #fff;
+  margin: 0 6px;
+}
+.paginationText {
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.yellowColor {
+  color: #f8b62a;
+}
+
+/* react scheduler */
+
+.e-schedule {
+  border-radius: 10px;
+}
+.e-schedule .e-schedule-toolbar {
+  height: 100px !important;
+}
+.e-schedule .e-schedule-toolbar .e-tbar-pos {
+  height: 64px !important;
+  background: black;
+}
+.e-toolbar .e-toolbar-items.e-tbar-pos .e-toolbar-left {
+  top: 50px;
+  width: 100%;
+}
+.e-toolbar .e-toolbar-items.e-tbar-pos .e-toolbar-left .e-next {
+  position: absolute;
+  right: 10px;
+}
+.e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn {
+  background: none;
+}
+.e-schedule
+  .e-schedule-toolbar
+  .e-toolbar-items
+  .e-toolbar-left
+  .e-tbar-btn.e-icon-btn:hover {
+  background: none !important;
+}
+.e-toolbar
+  .e-toolbar-items
+  .e-toolbar-item
+  .e-tbar-btn.e-btn
+  .e-icons.e-btn-icon {
+  color: #f8b62a;
+}
+.e-toolbar
+  .e-toolbar-items
+  .e-toolbar-item
+  .e-tbar-btn.e-btn
+  .e-icons.e-icon-prev::after {
+  content: 'Previous';
+  color: black;
+}
+.e-toolbar
+  .e-toolbar-items
+  .e-toolbar-item
+  .e-tbar-btn.e-btn
+  .e-icons.e-icon-next::before {
+  content: 'Next';
+  color: black;
+}
+.e-toolbar
+  .e-toolbar-items
+  .e-toolbar-item
+  .e-tbar-btn.e-btn
+  .e-icons.e-icon-next::after {
+  content: '\e956';
+}
+
+.e-schedule .e-schedule-toolbar .e-date-range {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.e-schedule .e-schedule-toolbar .e-date-range .e-icon-down-arrow {
+  display: none;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+td {
+  border-right: 1px solid white !important;
+}
+
+.e-header-row td:nth-child(1) div:nth-child(1)::after {
+  content: 'day';
+}
+.e-header-row td:nth-child(2) div:nth-child(1)::after {
+  content: 'day';
+}
+.e-header-row td:nth-child(3) div:nth-child(1)::after {
+  content: 'sday';
+}
+.e-header-row td:nth-child(4) div:nth-child(1)::after {
+  content: 'nesday';
+}
+.e-header-row td:nth-child(5) div:nth-child(1)::after {
+  content: 'rsday';
+}
+.e-header-row td:nth-child(6) div:nth-child(1)::after {
+  content: 'day';
+}
+.e-header-row td:nth-child(7) div:nth-child(1)::after {
+  content: 'urday';
+}
+
+.e-schedule .e-vertical-view .e-header-cells {
+  color: #d8d5d5 !important;
+}
+.e-schedule .e-vertical-view .e-header-cells.e-current-day {
+  color: #f8b62a;
+}
+.e-header-row .e-header-cells .e-header-date {
+  margin-left: 10px;
+  color: black !important;
+  margin-top: 20px;
+}
+
+.e-schedule .e-vertical-view .e-header-cells .e-header-date {
+  font-size: 12px;
+  font-weight: 600;
+}
+/* current date */
+
+.e-schedule .e-vertical-view .e-header-cells.e-current-day .e-header-date {
+  background: #f8b62a;
+  color: black;
+  width: 30px;
+  text-align: center;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* appointments */
+.e-schedule .e-vertical-view .e-day-wrapper .e-appointment {
+  background: #f8b62a !important;
+  border: none;
+  width: 100% !important;
+}
+.e-schedule
+  .e-schedule-toolbar
+  .e-toolbar-items
+  .e-toolbar-item
+  .e-tbar-btn
+  .e-tbar-btn-text {
+  color: #f8b62a;
+}
+
+.e-schedule .e-vertical-view .e-content-wrap table td {
+  background: white;
+}

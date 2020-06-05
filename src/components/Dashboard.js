@@ -12,6 +12,7 @@ import Students from './Students';
 import Profile from './Profile';
 import Files from './Files';
 import { THEMES } from 'src/constants';
+import NotFound from 'src/layouts/notFound';
 const useStyles = makeStyles(theme => ({
   dashboard: {
     width: 'calc(100% - 240px)',
@@ -81,6 +82,9 @@ const routes = [
     path: '/files',
     exact: true
   }
+  // {
+  //   // _Component: NotFound
+  // }
 ];
 const Routes = props => {
   return (
